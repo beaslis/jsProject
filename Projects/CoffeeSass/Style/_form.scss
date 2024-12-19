@@ -1,0 +1,48 @@
+#container-form {
+    width: 40vw;
+}
+
+#form-title>h1 {
+    font: normal normal 900 43px/63px Heebo;
+    color: #020253;
+}
+
+#form-title>p {
+    font: normal normal normal 20px/29px Heebo;
+    color: #020253;
+}
+
+#form-title {
+    width: 60%;
+    margin: auto;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form-control>input {
+    height: 50px;
+    background: #E5EEFF;
+    border: 0;
+    border-bottom: 5px solid #020253;
+}
+
+input[type="submit"] {
+    background-color: #020253;
+    color: #FFFFFF;
+    font: normal normal bold 22px/30px Heebo;
+    width: 50%;
+}
+
+label {
+    font: normal normal bold 16px/24px Heebo;
+}

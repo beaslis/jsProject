@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./Style/style1.css" />
+    <link rel="stylesheet" href="./Style/mediaQueries1.css" />
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div id="home" class="logo">Batel Alemayehu</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Batel Alemayehu</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Images/profilepic.jpg" alt="Batel Alemayehu profile picture" style="border-radius: 50%" ; />
+        </div>
+        <div class=" section__text">
+            <p class="section__text__p2">Hello, I'm</p>
+            <h1 class="title">Batel Alemayehu</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('/Resume/Batel Alemayehu.pdf')">
+                    Download CV
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Images/linkedin.png" alt="My LinkedIn profile" class="icon"
+                    onclick="location.href='https://www.linkedin.com/in/batel-alemayehu-84905923b/'" />
+                <img src="./Images/github.png" alt="My Github profile" class="icon"
+                    onclick="location.href='https://github.com/beaslis'" />
+            </div>
+        </div>
+    </section>
+    <section id="icons">
+        <div class="section-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML Icon" class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS Icon" class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SASS Icon" class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap Icon" class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" alt="javascript Icon" class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg" alt="typescript Icon" class="icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="react Icon" class="icons">
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Images/profile.jpg" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Images/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3><br>
+                        <p>High School</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Images/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3><br>
+                        <p>Full-stack Course</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Images/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>1 Year, 2 Months <br />Fullstack Developing During Course</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Hi! I'm Batel, <br> A Fullstack Developer in the making, <br>who loves challenges and learning
+                        more
+                        about
+                        the Tech World and all around it!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/project1.png" alt="Project 1" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Project One</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('/Projects/LetUsLeadYou2/LetUsLeadYou2.html')">Check Me
+                            Out!</a>
+                        <!-- DOWNLOAD -->
+                        <a class="btn-color project-btn" href="./Projects/LetUsLeadYou2/LetUsLeadYou2.zip"
+                            download="LetUsLeadYou2">Download!</a>
+                    </div>
+                </div>
+                <!--------------------------------------------- PROJECT 2 ---------------------------------------->
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/project4.png" alt="Project 2" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('/Projects/LetUsLeadYou/LetUsLeadYou.html')">Check
+                            Me
+                            Out!</a>
+                        <!-- DOWNLOAD -->
+                        <a class="btn-color project-btn" href="./Projects/LetUsLeadYou/LetUsLeadYou.zip"
+                            download="LetUsLeadYou">Download!</a>
+                    </div>
+                </div>
+                <!--------------------------------- PROJECT 3 -------------------------------------------------------->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/project3.png" alt="Project 3" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('/Projects/CoffeeSass/Coffee.html')">Check
+                            Me
+                            Out!</a>
+                        <!-- DOWNLOAD -->
+                        <a class="btn-color project-btn" href="./Projects/CoffeeSASS/CoffeeSass.zip"
+                            download="CoffeeSass">Download!</a>
+                    </div>
+                </div>
+                <!------------------------------------------------ PROJECT 4 -------------------------------------------------->
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/project5.png" alt="Project 4" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Project Four</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('/Projects/HereandNow/HereandNow.html')">Check
+                            Me
+                            Out!</a>
+                        <!-- DOWNLOAD -->
+                        <a class="btn-color project-btn" href="./Projects/HereandNow/HereandNow.zip"
+                            download="HereandNow">Download!</a>
+                    </div>
+                </div>
+                <!--------------------------------------------- PROJEFT 5 ------------------------------------------------------->
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/project6.png" alt="Project 5" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Project Five</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('/Projects/LoremIpsum/LoremIpsum.html')">Check
+                            Me
+                            Out!</a>
+                        <!-- DOWNLOAD -->
+                        <a class="btn-color project-btn" href="./Projects/LoremIpsum/LoremIpsum.zip"
+                            download="LoremIpsum">Download!</a>
+                    </div>
+                </div>
+                <!------------------------------------------ PROJECT 6 -------------------------------------------------------->
+
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/project2.png" alt="Project 6" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Project Six</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('/Projects/LoremIpsum2/LoremIpsum2.html')">Check
+                            Me
+                            Out!</a>
+                        <!-- DOWNLOAD -->
+                        <a class="btn-color project-btn" href="./Projects/LoremIpsum2/LoremIpsum2.zip"
+                            download="LoremIpsum2">Download!</a>
+                    </div>
+                </div>
+<!-------------------------------------JS PROJECT 1 - CALCULATOR -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/Calculator.png" alt="Project 6" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Calculator</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('Projects/Calculator/transitionPage.html')">Open me up!</a>
+                    </div>
+                </div>
+<!-----------------------------JS PROJECT 2 - MEMORY CARD -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/memorycard.png" alt="memory card" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Memory Card</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('Projects/memoryCard/transitionPage.html')">Open me up!</a>
+                    </div>
+                </div>
+
+                <!------------------------ JS PROJECT 3 - TIC TAC TOE  -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/TicTacToe.png" alt="Tic Tac Toe" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Tic Tac Toe </h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('Projects/ticTacToe/transitionPage.html')">Open me up!</a>
+                    </div>
+                </div>
+<!------------------------- PROJECT 4 - COUNTRIES  -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/Countries.png" alt="Countries" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Countries</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('Projects/Countries/transitionPage.html')">Open me up!</a>
+                    </div>
+                </div>
+                <!------------------PROJECT 5 - WEATHER APP  --------->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/weatherApp.png" alt="weatherApp" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">weather App</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('Projects/weatherApp/transitionPage.html')">Open me up!</a>
+                    </div>
+                </div>
+                <!-------------------- PROJECT 6 - EXPENSES -->
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./Images/Expenses.png" alt="Expenses" class="project-img">
+                    </div>
+                    <h2 class="services-subtitle project-title">Expenses</h2>
+                    <div class="btn-container">
+                        <a class="btn-color project-btn"
+                            onclick="window.open('Projects/Expenses/transitionPage.html')">Open me up!</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./Images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+                <p><a href="mailto:examplemail@gmail.com">Batelale7@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./Images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+                <p><a href="https://www.linkedin.com/in/batel-alemayehu-84905923b/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+<!-- FOOTER -->
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <p>Copyright &#169; 2024 Batel Alemayehu. All Rights Reserved.</p>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

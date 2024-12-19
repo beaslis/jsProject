@@ -1,0 +1,113 @@
+/* google font - azeret mono */
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'azert mono';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(246, 173, 197);
+}
+
+.container {
+    height: 400px;
+    width: 400px;
+    padding: 25px;
+    background: rgb(192, 213, 255);
+    border-radius: 10px;
+}
+
+.cards,
+.card,
+.view {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards .card {
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+}
+
+.card.shake {
+    animation: shake 0.5s ease-in;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
+
+}
+
+.cards .card .view {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    background: white;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform 0.25s linear;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.171);
+}
+
+.card .front-view span {
+    font-size: 43px;
+    color: rgb(192, 213, 255);
+    padding: 5px
+}
+
+.card .back-view {
+    transform: rotateY(-180deg);
+}
+
+.card .back-view img {
+    max-width: 45px;
+}
+
+.card.flip .back-view {
+    transform: rotateY(0);
+}
+
+.card.flip .front-view {
+    transform: rotateY(180deg);
+}

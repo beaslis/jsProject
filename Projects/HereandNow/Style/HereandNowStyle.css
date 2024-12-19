@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: transparent linear-gradient(180deg, #281eff 0%, #2dff8c 100%) 0%
+    0% no-repeat padding-box;
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  opacity: 1;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10%;
+  align-items: center;
+}
+
+.container > h1 {
+  font: normal normal normal 160px/231px Satisfy;
+  color: white;
+  text-shadow: 0px 0px 36px #00000087;
+  font-size: 7vw;
+}
+
+.container-text {
+  color: #f9f9f9;
+  font: normal normal normal 32px/38px Varela Round;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.container-text > h3 {
+  font-size: 32px;
+  font: normal normal normal 32px/38px Varela Round;
+}
+
+.container-text > p {
+  font-size: 16px;
+}
+
+.container-input {
+  display: inline-block;
+  direction: rtl;
+  margin-inline: 13px;
+}
+
+.container-input > label {
+  display: block;
+  font: normal normal normal 16px/20px Varela Round;
+  letter-spacing: 0px;
+  color: #f9f9f9;
+  opacity: 1;
+  text-align: right;
+}
+
+.container-input > input {
+  background: #f6f6f624 0% 0% no-repeat padding-box;
+  border: 2px solid #ffffff;
+  width: 24vw;
+  height: 5vh;
+  opacity: 1;
+  gap: 2rem;
+}
+
+#submit-button {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  font: normal normal normal 16px/20px Varela Round;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  width: 10vw;
+  height: 5vh;
+}
+
+@media (max-width: 800px) {
+  .container > h1 {
+    font-size: 60px;
+  }
+  .container-text > h3 {
+    font: normal normal normal 18px/22px Varela Round;
+  }
+
+  .container-text > p {
+    font: normal normal normal 16px/20px Varela Round;
+    margin-top: 1em;
+    text-align: center;
+    padding: 0.5rem 2rem 1rem 2rem;
+  }
+
+  .container-input {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .container-input > label {
+    font: normal normal normal 11px/13px Varela Round;
+  }
+
+  .container-input > input {
+    width: 80vw;
+    height: 5vh;
+    opacity: 1;
+  }
+
+  .container {
+    font: normal normal normal 60px/86px Satisfy;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 70vh;
+    width: 100%;
+  }
+
+  .form {
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #submit-button {
+    font: normal normal normal 11px/13px Varela Round;
+    color: #2823fd;
+    opacity: 1;
+    width: 80vw;
+  }
+}

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+.navbar {
+  background-color: #c4def1;
+  opacity: 70%;
+  color: white;
+}
+
+body {
+  background-image: url(/Projects/LoremIpsum/Images/bubbles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 30%;
+  height: 35rem;
+  box-shadow: 1rem -1rem 3rem lightgrey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: 35%;
+  top: 25%;
+}
+
+.container-input>h3 {
+  text-align: center;
+  margin-top: -2rem;
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+
+.form {
+  padding: 1rem 3rem 0 3rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: #a9c1f2;
+}
+
+.form-control {
+  border: 2px solid #a9c1f2;
+}
+
+#submit-button {
+  text-align: center;
+  background-color: #a9c1f2;
+  box-shadow: 4rem 2rem 3rem lightgrey;
+  opacity: 2;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 10rem;
+  position: fixed;
+  left: 46%;
+}
+
+@media (max-width: 800px) {
+  .container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 85%;
+    top: 10%;
+    left: 0%;
+    box-shadow: none;
+  }
+
+  .container-input {
+    font-size: 1rem;
+  }
+
+  .form {
+    padding: 2rem 0 0 0;
+    position: relative;
+    top: 5.5%;
+  }
+
+  #submit-button {
+    width: 10rem;
+    position: fixed;
+    left: 28%;
+  }
+}
